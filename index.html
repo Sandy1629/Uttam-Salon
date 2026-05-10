@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttam Men's Salon | Premium Hair Transformations & Natural Hair Patches</title>
+    <meta name="description" content="Uttam Salon - Ultra-premium men's & women's salon specializing in hair transformations, natural hair patches, beard grooming, keratin treatments, and luxury spa services. Book your appointment today.">
+    <meta name="keywords" content="luxury salon, hair patch, hair systems, beard grooming, keratin, premium salon, hair transformations">
+    <meta property="og:title" content="UTTAM SALON | Premium Hair Transformations">
+    <meta property="og:description" content="Where luxury meets transformation. Premium salon for men & women.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fdf8ef',
+                            100: '#f9ecc4',
+                            200: '#f3d78a',
+                            300: '#ecc44f',
+                            400: '#c9a461',
+                            500: '#b8903a',
+                            600: '#a07830',
+                            700: '#7d5b27',
+                            800: '#5e4320',
+                            900: '#3f2d16',
+                        },
+                        emerald: {
+                            450: '#0ea47a',
+                            550: '#0d9668',
+                            650: '#0a7d55',
+                            750: '#086645',
+                        },
+                        UTTAM: {
+                            black: '#0a0a0a',
+                            dark: '#111111',
+                            card: '#1a1a1a',
+                            border: '#2a2a2a',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                        accent: ['Cormorant Garamond', 'serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delay': 'float 6s ease-in-out 2s infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'pulse-gold': 'pulseGold 2s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'slide-down': 'slideDown 0.4s ease-out',
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'scale-in': 'scaleIn 0.5s ease-out',
+                        'tilt-in': 'tiltIn 0.6s ease-out',
+                        'spin-slow': 'spin 20s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark bg-UTTAM-black text-white font-body overflow-x-hidden transition-colors duration-700">
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-UTTAM-black transition-opacity duration-800" role="status" aria-label="Loading">
+        <div class="preloader-content flex flex-col items-center">
+            <div class="relative w-24 h-24 mb-6">
+                <div class="absolute inset-0 border-2 border-gold-400/30 rounded-full"></div>
+                <div class="absolute inset-0 border-2 border-transparent border-t-gold-400 rounded-full animate-spin"></div>
+                <div class="absolute inset-2 border-2 border-transparent border-b-gold-300 rounded-full animate-spin-slow"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="font-display text-gold-400 text-2xl font-bold">U</span>
+                </div>
+            </div>
+            <p class="font-display text-gold-400 text-xl tracking-[0.3em] uppercase animate-pulse">Uttam Salon</p>
+            <div class="mt-4 w-48 h-0.5 bg-UTTAM-border rounded overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-gold-400 via-gold-300 to-gold-400 shimmer-bar rounded"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-[100] transition-all duration-500" role="navigation" aria-label="Main navigation">
+        <div class="nav-glass mx-4 mt-4 rounded-2xl px-6 py-3">
+            <div class="flex items-center justify-between max-w-7xl mx-auto">
+                <!-- Logo -->
+                <a href="#hero" class="flex items-center gap-3 group" aria-label="UTTAM SALON">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-lg shadow-gold-400/20 group-hover:shadow-gold-400/40 transition-all duration-300 group-hover:scale-110">
+                        <span class="font-display text-UTTAM-black text-lg font-bold">U</span>
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="font-display text-lg font-bold tracking-wide text-gold-400">UTTAM SALON</h1>
+                        <p class="text-[10px] tracking-[0.25em] text-gold-400/60 uppercase">Premium Salon</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex items-center gap-1" role="menubar">
+                    <a href="#hero" class="nav-link active" data-section="hero" role="menuitem">Home</a>
+                    <a href="#testimonials" class="nav-link" data-section="testimonials" role="menuitem">Reviews</a>
+                    <a href="#services" class="nav-link" data-section="services" role="menuitem">Services</a>
+                    <a href="#about" class="nav-link" data-section="about" role="menuitem">About</a>
+                    <a href="#booking" class="nav-link" data-section="booking" role="menuitem">Book</a>
+                    <a href="#contact" class="nav-link" data-section="contact" role="menuitem">Contact</a>
+                </div>
+
+                <!-- Right Actions -->
+                <div class="flex items-center gap-3">
+                    <!-- Dark/Light Toggle -->
+                    <button id="themeToggle" class="relative w-10 h-10 rounded-xl bg-UTTAM-card/80 dark:bg-UTTAM-card/80 bg-white/80 border border-UTTAM-border/50 dark:border-UTTAM-border/50 border-gray-200 flex items-center justify-center hover:border-gold-400/50 transition-all duration-300 group" aria-label="Toggle light/dark mode">
+                        <i data-lucide="sun" class="w-4 h-4 text-gold-400 absolute transition-all duration-500 rotate-0 scale-100 dark:rotate-90 dark:scale-0"></i>
+                        <i data-lucide="moon" class="w-4 h-4 text-gold-400 absolute transition-all duration-500 rotate-90 scale-0 dark:rotate-0 dark:scale-100"></i>
+                    </button>
+
+                    <!-- Book CTA -->
+                    <a href="#booking" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-gold-400 to-gold-600 text-UTTAM-black font-semibold text-sm rounded-xl hover:shadow-lg hover:shadow-gold-400/30 hover:-translate-y-0.5 transition-all duration-300">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        Book Now
+                    </a>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="menuToggle" class="lg:hidden w-10 h-10 rounded-xl bg-UTTAM-card/80 dark:bg-UTTAM-card/80 bg-white/80 border border-UTTAM-border/50 dark:border-UTTAM-border/50 border-gray-200 flex items-center justify-center hover:border-gold-400/50 transition-all duration-300" aria-label="Toggle menu" aria-expanded="false">
+                        <i data-lucide="menu" class="w-5 h-5 dark:text-white text-UTTAM-black hamburger-icon"></i>
+                        <i data-lucide="x" class="w-5 h-5 dark:text-white text-UTTAM-black close-icon hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden hidden mx-4 mt-2 rounded-2xl nav-glass p-6 animate-slide-down">
+            <div class="flex flex-col gap-2">
+                <a href="#hero" class="mobile-nav-link active" data-section="hero">Home</a>
+                <a href="#testimonials" class="mobile-nav-link" data-section="testimonials">Reviews</a>
+                <a href="#services" class="mobile-nav-link" data-section="services">Services</a>
+                <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+                <a href="#booking" class="mobile-nav-link" data-section="booking">Book Appointment</a>
+                <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+            </div>
+            <a href="#booking" class="mt-4 w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-gradient-to-r from-gold-400 to-gold-600 text-UTTAM-black font-semibold rounded-xl">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                Book Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="relative min-h-screen flex items-center overflow-hidden" aria-label="Hero">
+        <!-- Particle Canvas -->
+        <canvas id="particleCanvas" class="absolute inset-0 z-0 w-full h-full"></canvas>
+
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-[1]">
+            <img src="http://static.photos/UTTAM/1200x630/1" alt="" class="w-full h-full object-cover opacity-0" aria-hidden="true">
+            <div class="absolute inset-0 bg-gradient-to-b dark:from-UTTAM-black/80 dark:via-UTTAM-black/60 dark:to-UTTAM-black from-white/80 via-white/60 to-white/80"></div>
+            <div class="absolute inset-0 bg-gradient-to-r dark:from-UTTAM-black/70 dark:to-transparent from-white/70 to-transparent"></div>
+        </div>
+
+        <!-- 3D Floating Elements -->
+        <div class="absolute top-20 right-10 w-20 h-20 border border-gold-400/10 rounded-full animate-float hidden lg:block" aria-hidden="true"></div>
+        <div class="absolute bottom-40 left-20 w-32 h-32 border border-emerald-500/10 rounded-full animate-float-delay hidden lg:block" aria-hidden="true"></div>
+        <div class="absolute top-1/3 right-1/4 w-2 h-2 bg-gold-400/30 rounded-full animate-pulse-gold" aria-hidden="true"></div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 pt-32 pb-20 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8" data-animate="fade-right">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-400/10 border border-gold-400/20 backdrop-blur-sm">
+                        <div class="w-2 h-2 bg-gold-400 rounded-full animate-pulse"></div>
+                        <span class="text-gold-400 text-sm font-medium tracking-wide">Luxury Hair & Skin Studio</span>
+                    </div>
+
+                    <!-- Heading -->
+                    <div class="space-y-4">
+                        <h2 class="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] tracking-tight">
+                            <span class="block dark:text-white text-UTTAM-black">UTTAM</span>
+                            <span class="block bg-gradient-to-r from-gold-400 via-gold-300 to-gold-500 bg-clip-text text-transparent">SALON</span>
+                        </h2>
+                        <p class="font-accent text-xl sm:text-2xl lg:text-3xl dark:text-white/70 text-UTTAM-black/70 italic">
+                            Where luxury meets transformation
+                        </p>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-lg dark:text-white/60 text-UTTAM-black/60 max-w-lg leading-relaxed">
+                        Premium Hair Transformations & Natural Hair Patches. Experience the pinnacle of grooming excellence — from signature haircuts to revolutionary hair systems.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#booking" class="btn-primary group">
+                            <span>Book Appointment</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                        <a href="#services" class="btn-secondary group">
+                            <span>Explore Services</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:translate-y-0.5"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="flex flex-wrap items-center gap-6 pt-4">
+                        <div class="trust-badge">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                            <div>
+                                <span class="font-bold text-lg dark:text-white text-UTTAM-black">50K+</span>
+                                <span class="text-xs dark:text-white/50 text-UTTAM-black/50 block">Followers</span>
+                            </div>
+                        </div>
+                        <div class="w-px h-10 bg-UTTAM-border dark:bg-UTTAM-border bg-gray-200"></div>
+                        <div class="trust-badge">
+                            <i data-lucide="award" class="w-5 h-5"></i>
+                            <div>
+                                <span class="font-bold text-lg dark:text-white text-UTTAM-black">12+</span>
+                                <span class="text-xs dark:text-white/50 text-UTTAM-black/50 block">Awards</span>
+                            </div>
+                        </div>
+                        <div class="w-px h-10 bg-UTTAM-border dark:bg-UTTAM-border bg-gray-200"></div>
+                        <div class="trust-badge">
+                            <i data-lucide="calendar-check" class="w-5 h-5"></i>
+                            <div>
+                                <span class="font-bold text-lg dark:text-white text-UTTAM-black">15+</span>
+                                <span class="text-xs dark:text-white/50 text-UTTAM-black/50 block">Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image / 3D Card -->
+                <div class="hidden lg:block" data-animate="fade-left">
+                    <div class="hero-3d-card relative" id="heroCard">
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-gold-400/10">
+                            <img src="images/2024-08-13 (1).jpg" alt="UTTAM SALON Salon interior" class="w-full h-[500px] object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-UTTAM-black/60 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <p class="font-display text-2xl text-white font-semibold">Your Transformation Awaits</p>
+                                <p class="text-white/60 text-sm mt-1">Premium hair solutions for discerning clients</p>
+                            </div>
+                        </div>
+                        <!-- 3D Depth layers -->
+                        <div class="absolute -top-4 -right-4 w-full h-full rounded-3xl border border-gold-400/10 -z-10"></div>
+                        <div class="absolute -top-8 -right-8 w-full h-full rounded-3xl border border-gold-400/5 -z-20"></div>
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-5 -left-5 glass-card px-5 py-3 rounded-2xl flex items-center gap-3 animate-float">
+                            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center">
+                                <i data-lucide="sparkles" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="dark:text-white text-UTTAM-black font-semibold text-sm">Hair Patch Expert</p>
+                                <p class="text-gold-400 text-xs">Natural looking results</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-bounce">
+            <span class="text-xs dark:text-white/40 text-UTTAM-black/40 tracking-widest uppercase">Scroll</span>
+            <i data-lucide="chevrons-down" class="w-5 h-5 dark:text-white/40 text-UTTAM-black/40"></i>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="relative py-24 dark:bg-UTTAM-dark bg-gray-50 overflow-hidden" aria-label="Instagram & Video Testimonials">
+        <!-- Background decoration -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" aria-hidden="true"></div>
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 space-y-4" data-animate="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-400/10 border border-gold-400/20 mx-auto">
+                    <i data-lucide="star" class="w-4 h-4 text-gold-400"></i>
+                    <span class="text-gold-400 text-sm font-medium">Client Love</span>
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold dark:text-white text-UTTAM-black">
+                    What Our <span class="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">Clients</span> Say
+                </h2>
+                <p class="dark:text-white/60 text-UTTAM-black/60 max-w-2xl mx-auto text-lg">
+                    Real transformations, real stories. See why thousands trust UTTAM SALON for their hair journey.
+                </p>
+            </div>
+
+            <!-- Testimonials Carousel -->
+            <div class="relative">
+                <div id="testimonialCarousel" class="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none;" role="region" aria-label="Testimonial carousel">
+                    
+                    <!-- Testimonial Card 1 -->
+                    <div class="flex-shrink-0 w-[340px] sm:w-[380px] snap-center">
+                        <div class="tilt-card glass-card rounded-2xl p-6 h-full" data-tilt>
+                            <div class="flex items-center gap-3 mb-4">
+                                <img src="http://static.photos/people/200x200/101" alt="Arjun M." class="w-12 h-12 rounded-full object-cover border-2 border-gold-400/30">
+                                <div>
+                                    <p class="dark:text-white text-UTTAM-black font-semibold">Arjun M.</p>
+                                    <p class="text-gold-400 text-sm">@arjun_style</p>
+                                </div>
+                                <i data-lucide="instagram" class="w-5 h-5 text-gold-400 ml-auto"></i>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                            </div>
+                            <p class="dark:text-white/70 text-UTTAM-black/70 leading-relaxed">"The hair patch looks so natural, even my friends couldn't tell! UTTAM SALON truly changed my confidence. 10/10 would recommend to anyone."</p>
+                            <div class="mt-4 rounded-xl overflow-hidden">
+                                <img src="http://static.photos/people/320x240/201" alt="Arjun's transformation" class="w-full h-48 object-cover rounded-xl">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 2 - Video -->
+                    <div class="flex-shrink-0 w-[340px] sm:w-[380px] snap-center">
+                        <div class="tilt-card glass-card rounded-2xl p-6 h-full" data-tilt>
+                            <div class="flex items-center gap-3 mb-4">
+                                <img src="http://static.photos/people/200x200/102" alt="Priya S." class="w-12 h-12 rounded-full object-cover border-2 border-gold-400/30">
+                                <div>
+                                    <p class="dark:text-white text-UTTAM-black font-semibold">Priya S.</p>
+                                    <p class="text-gold-400 text-sm">@priya_beauty</p>
+                                </div>
+                                <i data-lucide="youtube" class="w-5 h-5 text-red-500 ml-auto"></i>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                            </div>
+                            <p class="dark:text-white/70 text-UTTAM-black/70 leading-relaxed mb-4">"My keratin treatment at UTTAM SALON was phenomenal! Frizz-free and silky for 3+ months. The team is incredibly skilled and attentive."</p>
+                            <!-- Video Placeholder -->
+                            <div class="relative rounded-xl overflow-hidden group cursor-pointer aspect-video bg-UTTAM-black/50" onclick="playVideo(this)">
+                                <img src="http://static.photos/people/640x360/202" alt="Priya's review video" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+                                    <div class="w-14 h-14 rounded-full bg-gold-400/90 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-gold-400/30">
+                                        <i data-lucide="play" class="w-6 h-6 text-UTTAM-black ml-0.5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 3 -->
+                    <div class="flex-shrink-0 w-[340px] sm:w-[380px] snap-center">
+                        <div class="tilt-card glass-card rounded-2xl p-6 h-full" data-tilt>
+                            <div class="flex items-center gap-3 mb-4">
+                                <img src="http://static.photos/people/200x200/103" alt="Vikram R." class="w-12 h-12 rounded-full object-cover border-2 border-gold-400/30">
+                                <div>
+                                    <p class="dark:text-white text-UTTAM-black font-semibold">Vikram R.</p>
+                                    <p class="text-gold-400 text-sm">@vik_grooming</p>
+                                </div>
+                                <i data-lucide="instagram" class="w-5 h-5 text-gold-400 ml-auto"></i>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                            </div>
+                            <p class="dark:text-white/70 text-UTTAM-black/70 leading-relaxed">"Best beard shaping I've ever had. The attention to detail is phenomenal. The premium ambiance makes you feel like royalty. Highly recommend!"</p>
+                            <div class="mt-4 rounded-xl overflow-hidden">
+                                <img src="http://static.photos/people/320x240/203" alt="Vikram's grooming result" class="w-full h-48 object-cover rounded-xl">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 4 - Video -->
+                    <div class="flex-shrink-0 w-[340px] sm:w-[380px] snap-center">
+                        <div class="tilt-card glass-card rounded-2xl p-6 h-full" data-tilt>
+                            <div class="flex items-center gap-3 mb-4">
+                                <img src="http://static.photos/people/200x200/104" alt="Nisha K." class="w-12 h-12 rounded-full object-cover border-2 border-gold-400/30">
+                                <div>
+                                    <p class="dark:text-white text-UTTAM-black font-semibold">Nisha K.</p>
+                                    <p class="text-gold-400 text-sm">@nisha_glam</p>
+                                </div>
+                                <i data-lucide="instagram" class="w-5 h-5 text-gold-400 ml-auto"></i>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                            </div>
+                            <p class="dark:text-white/70 text-UTTAM-black/70 leading-relaxed mb-4">"Got my hair extensions here and they look absolutely AMAZING! Natural, bouncy, and gorgeous. UTTAM SALON is the only salon I trust now!"</p>
+                            <!-- Reel Placeholder -->
+                            <div class="relative rounded-xl overflow-hidden group cursor-pointer aspect-[9/16] max-h-64" onclick="playVideo(this)">
+                                <img src="http://static.photos/people/640x360/204" alt="Nisha's reel" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+                                    <div class="w-14 h-14 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                                        <i data-lucide="play" class="w-6 h-6 text-white ml-0.5"></i>
+                                    </div>
+                                </div>
+                                <span class="absolute bottom-2 right-2 text-xs text-white/80 bg-black/50 px-2 py-1 rounded">Reel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 5 -->
+                    <div class="flex-shrink-0 w-[340px] sm:w-[380px] snap-center">
+                        <div class="tilt-card glass-card rounded-2xl p-6 h-full" data-tilt>
+                            <div class="flex items-center gap-3 mb-4">
+                                <img src="http://static.photos/people/200x200/105" alt="Raj P." class="w-12 h-12 rounded-full object-cover border-2 border-gold-400/30">
+                                <div>
+                                    <p class="dark:text-white text-UTTAM-black font-semibold">Raj P.</p>
+                                    <p class="text-gold-400 text-sm">@raj_patch_review</p>
+                                </div>
+                                <i data-lucide="youtube" class="w-5 h-5 text-red-500 ml-auto"></i>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                            </div>
+                            <p class="dark:text-white/70 text-UTTAM-black/70 leading-relaxed mb-4">"I was skeptical about hair patches, but UTTAM SALON made me a believer. The Swiss lace system is undetectable! Life-changing experience."</p>
+                            <!-- Before/After -->
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="rounded-xl overflow-hidden relative">
+                                    <img src="http://static.photos/people/320x240/205" alt="Before" class="w-full h-40 object-cover">
+                                    <span class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">Before</span>
+                                </div>
+                                <div class="rounded-xl overflow-hidden relative">
+                                    <img src="http://static.photos/people/320x240/206" alt="After" class="w-full h-40 object-cover">
+                                    <span class="absolute bottom-2 left-2 bg-gold-400/90 text-UTTAM-black text-xs px-2 py-1 rounded font-semibold">After</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 6 -->
+                    <div class="flex-shrink-0 w-[340px] sm:w-[380px] snap-center">
+                        <div class="tilt-card glass-card rounded-2xl p-6 h-full" data-tilt>
+                            <div class="flex items-center gap-3 mb-4">
+                                <img src="http://static.photos/people/200x200/106" alt="Meera D." class="w-12 h-12 rounded-full object-cover border-2 border-gold-400/30">
+                                <div>
+                                    <p class="dark:text-white text-UTTAM-black font-semibold">Meera D.</p>
+                                    <p class="text-gold-400 text-sm">@meera_flawless</p>
+                                </div>
+                                <i data-lucide="instagram" class="w-5 h-5 text-gold-400 ml-auto"></i>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                            </div>
+                            <p class="dark:text-white/70 text-UTTAM-black/70 leading-relaxed">"The hair color and highlights are stunning! I've never received so many compliments. The salon ambiance is pure luxury. Coming back for sure!"</p>
+                            <div class="mt-4 rounded-xl overflow-hidden">
+                                <img src="http://static.photos/people/320x240/207" alt="Meera's color result" class="w-full h-48 object-cover rounded-xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="flex items-center justify-center gap-4 mt-8">
+                    <button onclick="scrollCarousel(-1)" class="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:border-gold-400/50 transition-all duration-300 group" aria-label="Previous testimonial">
+                        <i data-lucide="chevron-left" class="w-5 h-5 dark:text-white text-UTTAM-black group-hover:text-gold-400 transition-colors"></i>
+                    </button>
+                    <div class="flex gap-2" id="carouselDots"></div>
+                    <button onclick="scrollCarousel(1)" class="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:border-gold-400/50 transition-all duration-300 group" aria-label="Next testimonial">
+                        <i data-lucide="chevron-right" class="w-5 h-5 dark:text-white text-UTTAM-black group-hover:text-gold-400 transition-colors"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="relative py-24 dark:bg-UTTAM-black bg-white overflow-hidden" aria-label="Our Services">
+        <!-- Background Effects -->
+        <div class="absolute top-1/2 -translate-y-1/2 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl" aria-hidden="true"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 space-y-4" data-animate="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 mx-auto">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-emerald-400"></i>
+                    <span class="text-emerald-400 text-sm font-medium">Premium Services</span>
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold dark:text-white text-UTTAM-black">
+                    Our <span class="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">Services</span>
+                </h2>
+                <p class="dark:text-white/60 text-UTTAM-black/60 max-w-2xl mx-auto text-lg">
+                    From classic cuts to revolutionary hair systems, every service is delivered with precision and luxury.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12" role="tablist" aria-label="Service categories">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Services</button>
+                <button class="filter-btn" data-filter="haircut" role="tab" aria-selected="false">Haircuts</button>
+                <button class="filter-btn" data-filter="beard" role="tab" aria-selected="false">Beard Grooming</button>
+                <button class="filter-btn" data-filter="hairpatch" role="tab" aria-selected="false">Hair Patches</button>
+                <button class="filter-btn" data-filter="spa" role="tab" aria-selected="false">Spa Treatments</button>
+                <button class="filter-btn" data-filter="color" role="tab" aria-selected="false">Hair Color</button>
+                <button class="filter-btn" data-filter="treatment" role="tab" aria-selected="false">Treatments</button>
+                <button class="filter-btn" data-filter="facial" role="tab" aria-selected="false">Facials</button>
+            </div>
+
+            <!-- Services Grid -->
+            <div id="servicesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" role="tabpanel">
+                <!-- Services will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="relative py-24 dark:bg-UTTAM-dark bg-gray-50 overflow-hidden" aria-label="About Us">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 space-y-4" data-animate="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-400/10 border border-gold-400/20 mx-auto">
+                    <i data-lucide="crown" class="w-4 h-4 text-gold-400"></i>
+                    <span class="text-gold-400 text-sm font-medium">Our Story</span>
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold dark:text-white text-UTTAM-black">
+                    About <span class="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">UTTAM SALON</span>
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Images -->
+                <div class="relative" data-animate="fade-right">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="rounded-2xl overflow-hidden shadow-xl tilt-card" data-tilt>
+                                <img src="images/2024-08-13 (2).jpg" alt="UTTAM SALON salon interior" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <div class="rounded-2xl overflow-hidden shadow-xl tilt-card" data-tilt>
+                                <img src="images/2024-08-13 (5).jpg" alt="Premium equipment and tools" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-700">
+                            </div>
+                        </div>
+                        <div class="space-y-4 mt-8">
+                            <div class="rounded-2xl overflow-hidden shadow-xl tilt-card" data-tilt>
+                                <img src="images/2024-08-13 (4).jpg" alt="Stylist at work" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-700">
+                            </div>
+                            <div class="rounded-2xl overflow-hidden shadow-xl tilt-card" data-tilt>
+                                <img src="images/2024-08-13 (3).jpg" alt="Salon premium environment" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-700">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stats overlay -->
+                    <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 glass-card px-8 py-4 rounded-2xl flex items-center gap-8">
+                        <div class="text-center">
+                            <p class="font-display text-3xl font-bold text-gold-400">15+</p>
+                            <p class="dark:text-white/50 text-UTTAM-black/50 text-sm">Years</p>
+                        </div>
+                        <div class="w-px h-12 bg-UTTAM-border dark:bg-UTTAM-border bg-gray-200"></div>
+                        <div class="text-center">
+                            <p class="font-display text-3xl font-bold text-gold-400">10K+</p>
+                            <p class="dark:text-white/50 text-UTTAM-black/50 text-sm">Clients</p>
+                        </div>
+                        <div class="w-px h-12 bg-UTTAM-border dark:bg-UTTAM-border bg-gray-200"></div>
+                        <div class="text-center">
+                            <p class="font-display text-3xl font-bold text-gold-400">98%</p>
+                            <p class="dark:text-white/50 text-UTTAM-black/50 text-sm">Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="space-y-8" data-animate="fade-left">
+                    <div class="space-y-4">
+                        <h3 class="font-display text-3xl font-bold dark:text-white text-UTTAM-black">
+                            Where Artistry Meets <span class="text-gold-400">Excellence</span>
+                        </h3>
+                        <p class="dark:text-white/60 text-UTTAM-black/60 leading-relaxed text-lg">
+                            Founded in 2009, UTTAM SALON was born from a vision to redefine luxury grooming. What started as a boutique salon has evolved into a premier destination for those seeking exceptional hair transformations.
+                        </p>
+                        <p class="dark:text-white/60 text-UTTAM-black/60 leading-relaxed">
+                            Our pioneering expertise in <strong class="text-gold-400">Hair Patch / Hair Systems</strong> has restored confidence for thousands of clients. Using cutting-edge Swiss Lace, Ultra-Thin Skin, and Mono-filament technologies, we deliver results that look and feel completely natural.
+                        </p>
+                    </div>
+
+                    <!-- Values -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="glass-card p-4 rounded-xl hover:border-gold-400/30 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-3">
+                                <i data-lucide="shield-check" class="w-5 h-5 text-UTTAM-black"></i>
+                            </div>
+                            <h4 class="dark:text-white text-UTTAM-black font-semibold mb-1">Premium Quality</h4>
+                            <p class="dark:text-white/50 text-UTTAM-black/50 text-sm">Only the finest products and techniques used</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl hover:border-gold-400/30 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center mb-3">
+                                <i data-lucide="heart-handshake" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <h4 class="dark:text-white text-UTTAM-black font-semibold mb-1">Personal Touch</h4>
+                            <p class="dark:text-white/50 text-UTTAM-black/50 text-sm">Every client receives personalized consultation</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl hover:border-gold-400/30 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-3">
+                                <i data-lucide="microscope" class="w-5 h-5 text-UTTAM-black"></i>
+                            </div>
+                            <h4 class="dark:text-white text-UTTAM-black font-semibold mb-1">Innovation</h4>
+                            <p class="dark:text-white/50 text-UTTAM-black/50 text-sm">Latest technology in hair systems & treatments</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl hover:border-gold-400/30 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center mb-3">
+                                <i data-lucide="lock" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <h4 class="dark:text-white text-UTTAM-black font-semibold mb-1">Discretion</h4>
+                            <p class="dark:text-white/50 text-UTTAM-black/50 text-sm">Complete privacy for all treatments</p>
+                        </div>
+                    </div>
+
+                    <!-- Team -->
+                    <div>
+                        <h4 class="font-display text-xl font-semibold dark:text-white text-UTTAM-black mb-4">Meet Our Experts</h4>
+                        <div class="flex gap-4 overflow-x-auto pb-2" style="scrollbar-width: none;">
+                            <div class="flex-shrink-0 glass-card rounded-xl p-4 min-w-[180px] hover:border-gold-400/30 transition-all duration-300">
+                                <img src="http://static.photos/people/200x200/401" alt="Arun Kumar - Master Stylist" class="w-full h-36 object-cover rounded-lg mb-3">
+                                <p class="dark:text-white text-UTTAM-black font-semibold">Arun Kumar</p>
+                                <p class="text-gold-400 text-sm">Master Stylist</p>
+                            </div>
+                            <div class="flex-shrink-0 glass-card rounded-xl p-4 min-w-[180px] hover:border-gold-400/30 transition-all duration-300">
+                                <img src="http://static.photos/people/200x200/402" alt="Deepa Sharma - Hair System Expert" class="w-full h-36 object-cover rounded-lg mb-3">
+                                <p class="dark:text-white text-UTTAM-black font-semibold">Deepa Sharma</p>
+                                <p class="text-gold-400 text-sm">Hair System Expert</p>
+                            </div>
+                            <div class="flex-shrink-0 glass-card rounded-xl p-4 min-w-[180px] hover:border-gold-400/30 transition-all duration-300">
+                                <img src="http://static.photos/people/200x200/403" alt="Ravi Singh - Color Specialist" class="w-full h-36 object-cover rounded-lg mb-3">
+                                <p class="dark:text-white text-UTTAM-black font-semibold">Ravi Singh</p>
+                                <p class="text-gold-400 text-sm">Color Specialist</p>
+                            </div>
+                            <div class="flex-shrink-0 glass-card rounded-xl p-4 min-w-[180px] hover:border-gold-400/30 transition-all duration-300">
+                                <img src="http://static.photos/people/200x200/404" alt="Maya Patel - Spa Therapist" class="w-full h-36 object-cover rounded-lg mb-3">
+                                <p class="dark:text-white text-UTTAM-black font-semibold">Maya Patel</p>
+                                <p class="text-gold-400 text-sm">Spa Therapist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REFINED: TRANSFORMATIONS & VIDEOS SECTION ===== -->
+    <!-- ===== IMPROVED: TRANSFORMATIONS & VIDEOS SECTION ===== -->
+<section id="videos" class="relative py-20 lg:py-28 dark:bg-UTTAM-dark bg-gray-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8">
+        
+        <div class="text-center mb-12" data-animate="fade-up">
+            <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-rose-500/10 to-purple-500/10 border border-purple-400/30 mx-auto">
+                <i data-lucide="play-circle" class="w-5 h-5 text-purple-400"></i>
+                <span class="text-purple-400 text-sm font-medium">REAL RESULTS</span>
+            </div>
+            <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold dark:text-white text-UTTAM-black mt-6">
+                Watch Our <span class="bg-gradient-to-r from-gold-400 via-rose-400 to-purple-500 bg-clip-text text-transparent">Transformations</span>
+            </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-8 lg:gap-10">
+
+            <!-- LEFT: YouTube Videos -->
+            <div class="lg:col-span-3 space-y-8">
+                <h3 class="text-2xl font-semibold dark:text-white text-UTTAM-black flex items-center gap-3">
+                    <i data-lucide="youtube" class="text-red-500"></i> YouTube Videos
+                </h3>
+                
+                <!-- Main Featured Video -->
+                <div class="glass-card rounded-3xl overflow-hidden shadow-xl">
+                    <div class="aspect-video">
+                        <iframe width="100%" height="100%" 
+                            src="https://www.youtube.com/embed/T-INif7y8ts" 
+                            title="Signature Hair Patch Transformation" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold">Signature Hair Patch Transformation</h3>
+                        <p class="dark:text-white/60 text-UTTAM-black/60">Complete client journey with Swiss Lace System</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Instagram Reels -->
+            <div class="lg:col-span-2 space-y-8">
+                <h3 class="text-2xl font-semibold dark:text-white text-UTTAM-black flex items-center gap-3">
+                    <i data-lucide="instagram" class="text-pink-500"></i> Instagram Reels
+                </h3>
+                
+                <div class="glass-card rounded-3xl overflow-hidden">
+                    <div class="aspect-[9/16] bg-black">
+                        <blockquote class="instagram-media" 
+                                    data-instgrm-permalink="https://www.instagram.com/reel/YOUR_REEL_ID_HERE/" 
+                                    data-instgrm-version="14"></blockquote>
+                    </div>
+                    <div class="p-5">
+                        <p class="font-medium">Beard Transformation Reel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beautiful Playlist Below -->
+        <div class="mt-16">
+            <h3 class="text-2xl font-semibold mb-8 dark:text-white text-UTTAM-black">More Client Transformations</h3>
+            
+            <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide" id="playlist">
+                <!-- You can duplicate these cards -->
+                <div class="flex-shrink-0 w-80 snap-center glass-card rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300">
+                    <div class="aspect-video">
+                        <iframe width="100%" height="100%" 
+                            src="https://www.youtube.com/embed/T-INif7y8ts" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-semibold">Keratin Treatment Result</h4>
+                        <p class="text-sm dark:text-white/60">Frizz-free • 3 Months</p>
+                    </div>
+                </div>
+
+                <!-- Add more cards like this -->
+            </div>
+        </div>
+    </div>
+
+
+            <!-- Photo Gallery -->
+            <div class="mt-16">
+                <h3 class="text-center font-display text-3xl font-semibold mb-10 dark:text-white text-UTTAM-black">
+                    Client Photo Gallery
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                    <!-- Replace these with your real photos -->
+                    <div class="aspect-square rounded-2xl overflow-hidden glass-card">
+                        <img src="images/2024-08-13 (3).jpg" alt="" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square rounded-2xl overflow-hidden glass-card">
+                        <img src="images/2024-08-13 (4).jpg" alt="" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square rounded-2xl overflow-hidden glass-card">
+                        <img src="images/2024-08-13 (5).jpg" alt="" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square rounded-2xl overflow-hidden glass-card">
+                        <img src="images/2024-08-13 (6).jpg" alt="" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square rounded-2xl overflow-hidden glass-card">
+                        <img src="images/2024-08-13 (7).jpg" alt="" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square rounded-2xl overflow-hidden glass-card">
+                        <img src="images/2024-08-13 (8).jpg" alt="" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square rounded-2xl overflow-hidden glass-card">
+                        <img src="images/2024-08-13 (9).jpg" alt="" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+
+                    <!-- Add more images here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BOOKING SECTION ===== -->
+    <section id="booking" class="relative py-24 dark:bg-UTTAM-black bg-white overflow-hidden" aria-label="Book Appointment">
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl" aria-hidden="true"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 sm:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 space-y-4" data-animate="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-400/10 border border-gold-400/20 mx-auto">
+                    <i data-lucide="calendar" class="w-4 h-4 text-gold-400"></i>
+                    <span class="text-gold-400 text-sm font-medium">Book Your Slot</span>
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold dark:text-white text-UTTAM-black">
+                    Book Your <span class="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">Appointment</span>
+                </h2>
+                <p class="dark:text-white/60 text-UTTAM-black/60 max-w-xl mx-auto text-lg">
+                    Reserve your premium experience in just a few steps. Walk in with confidence, walk out transformed.
+                </p>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="glass-card rounded-3xl p-8 sm:p-10">
+                <form id="bookingForm" class="space-y-8" novalidate>
+                    <!-- Step Indicator -->
+                    <div class="flex items-center justify-between mb-8">
+                        <div class="flex items-center gap-2" id="step1Indicator">
+                            <div class="w-8 h-8 rounded-full bg-gradient-to-r from-gold-400 to-gold-600 flex items-center justify-center text-UTTAM-black font-bold text-sm step-circle active">1</div>
+                            <span class="dark:text-white text-UTTAM-black text-sm font-medium hidden sm:inline">Service</span>
+                        </div>
+                        <div class="flex-1 h-0.5 mx-3 dark:bg-UTTAM-border bg-gray-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-gold-400 to-gold-600 transition-all duration-500" id="step1Progress" style="width: 0%"></div>
+                        </div>
+                        <div class="flex items-center gap-2" id="step2Indicator">
+                            <div class="w-8 h-8 rounded-full dark:bg-UTTAM-card bg-gray-100 border dark:border-UTTAM-border border-gray-200 flex items-center justify-center dark:text-white/40 text-UTTAM-black/40 font-bold text-sm step-circle">2</div>
+                            <span class="dark:text-white/40 text-UTTAM-black/40 text-sm font-medium hidden sm:inline">Details</span>
+                        </div>
+                        <div class="flex-1 h-0.5 mx-3 dark:bg-UTTAM-border bg-gray-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-gold-400 to-gold-600 transition-all duration-500" id="step2Progress" style="width: 0%"></div>
+                        </div>
+                        <div class="flex items-center gap-2" id="step3Indicator">
+                            <div class="w-8 h-8 rounded-full dark:bg-UTTAM-card bg-gray-100 border dark:border-UTTAM-border border-gray-200 flex items-center justify-center dark:text-white/40 text-UTTAM-black/40 font-bold text-sm step-circle">3</div>
+                            <span class="dark:text-white/40 text-UTTAM-black/40 text-sm font-medium hidden sm:inline">Confirm</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Service Selection -->
+                    <div id="bookingStep1" class="booking-step">
+                        <h3 class="font-display text-2xl font-semibold dark:text-white text-UTTAM-black mb-6">Select Your Service</h3>
+                        <div class="grid sm:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <label for="serviceCategory" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Category</label>
+                                <select id="serviceCategory" class="form-input" required aria-label="Service category">
+                                    <option value="">Choose category</option>
+                                    <option value="haircut">Haircuts</option>
+                                    <option value="beard">Beard Grooming</option>
+                                    <option value="hairpatch">Hair Patches / Systems</option>
+                                    <option value="spa">Spa Treatments</option>
+                                    <option value="color">Hair Color</option>
+                                    <option value="treatment">Treatments</option>
+                                    <option value="facial">Facials</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="serviceSelect" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Service</label>
+                                <select id="serviceSelect" class="form-input" required aria-label="Specific service">
+                                    <option value="">Choose service first</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="bookingDate" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Preferred Date</label>
+                                <input type="date" id="bookingDate" class="form-input" required aria-label="Appointment date">
+                            </div>
+                            <div>
+                                <label for="bookingTime" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Preferred Time</label>
+                                <select id="bookingTime" class="form-input" required aria-label="Appointment time">
+                                    <option value="">Select time</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex justify-end mt-8">
+                            <button type="button" onclick="nextStep(2)" class="btn-primary group">
+                                <span>Next Step</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Personal Details -->
+                    <div id="bookingStep2" class="booking-step hidden">
+                        <h3 class="font-display text-2xl font-semibold dark:text-white text-UTTAM-black mb-6">Your Details</h3>
+                        <div class="grid sm:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <label for="clientName" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Full Name</label>
+                                <input type="text" id="clientName" placeholder="John Smith" class="form-input" required aria-label="Full name">
+                                <p class="text-red-400 text-xs mt-1 hidden" id="nameError">Please enter your name</p>
+                            </div>
+                            <div>
+                                <label for="clientPhone" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="clientPhone" placeholder="+91 98765 43210" class="form-input" required aria-label="Phone number">
+                                <p class="text-red-400 text-xs mt-1 hidden" id="phoneError">Please enter a valid phone number</p>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="clientEmail" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" id="clientEmail" placeholder="john@email.com" class="form-input" required aria-label="Email address">
+                            <p class="text-red-400 text-xs mt-1 hidden" id="emailError">Please enter a valid email</p>
+                        </div>
+                        <div class="mb-6">
+                            <label for="clientNotes" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Special Requests (Optional)</label>
+                            <textarea id="clientNotes" rows="3" placeholder="Any preferences or special requirements..." class="form-input resize-none" aria-label="Special requests"></textarea>
+                        </div>
+                        <div class="flex justify-between mt-8">
+                            <button type="button" onclick="nextStep(1)" class="btn-secondary">
+                                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                                <span>Back</span>
+                            </button>
+                            <button type="button" onclick="nextStep(3)" class="btn-primary group">
+                                <span>Review & Confirm</span>
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Confirmation -->
+                    <div id="bookingStep3" class="booking-step hidden">
+                        <h3 class="font-display text-2xl font-semibold dark:text-white text-UTTAM-black mb-6">Confirm Booking</h3>
+                        <div id="bookingSummary" class="space-y-4 mb-8">
+                            <!-- Populated by JS -->
+                        </div>
+                        <div class="flex justify-between mt-8">
+                            <button type="button" onclick="nextStep(2)" class="btn-secondary">
+                                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                                <span>Back</span>
+                            </button>
+                            <button type="submit" class="btn-primary group">
+                                <i data-lucide="calendar-check" class="w-4 h-4"></i>
+                                <span>Confirm Booking</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Success State -->
+                    <div id="bookingSuccess" class="hidden text-center py-12">
+                        <div class="w-20 h-20 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center mx-auto mb-6 animate-scale-in">
+                            <i data-lucide="check" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <h3 class="font-display text-3xl font-bold dark:text-white text-UTTAM-black mb-3">Booking Confirmed!</h3>
+                        <p class="dark:text-white/60 text-UTTAM-black/60 text-lg mb-2">Thank you for choosing UTTAM SALON</p>
+                        <p class="dark:text-white/40 text-UTTAM-black/40">You'll receive a confirmation message shortly.</p>
+                        <button type="button" onclick="resetBooking()" class="btn-primary mt-8">
+                            <i data-lucide="plus" class="w-4 h-4"></i>
+                            <span>Book Another</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="relative py-24 dark:bg-UTTAM-dark bg-gray-50 overflow-hidden" aria-label="Contact Us">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 space-y-4" data-animate="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-400/10 border border-gold-400/20 mx-auto">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-gold-400"></i>
+                    <span class="text-gold-400 text-sm font-medium">Get In Touch</span>
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold dark:text-white text-UTTAM-black">
+                    Contact <span class="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">Us</span>
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-6" data-animate="fade-right">
+                    <div class="glass-card rounded-2xl p-6 hover:border-gold-400/30 transition-all duration-300 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex-shrink-0 flex items-center justify-center">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-UTTAM-black"></i>
+                        </div>
+                        <div>
+                            <h4 class="dark:text-white text-UTTAM-black font-semibold mb-1">Visit Us</h4>
+                            <p class="dark:text-white/60 text-UTTAM-black/60">42 Goldfinch Avenue, Hauz Khas<br>New Delhi, India 110016</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-6 hover:border-gold-400/30 transition-all duration-300 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex-shrink-0 flex items-center justify-center">
+                            <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="dark:text-white text-UTTAM-black font-semibold mb-1">Call Us</h4>
+                            <p class="dark:text-white/60 text-UTTAM-black/60">+91 98765 43210</p>
+                            <p class="dark:text-white/60 text-UTTAM-black/60">+91 11 4567 8900</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-6 hover:border-gold-400/30 transition-all duration-300 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex-shrink-0 flex items-center justify-center">
+                            <i data-lucide="mail" class="w-5 h-5 text-UTTAM-black"></i>
+                        </div>
+                        <div>
+                            <h4 class="dark:text-white text-UTTAM-black font-semibold mb-1">Email</h4>
+                            <p class="dark:text-white/60 text-UTTAM-black/60">hello@UTTAMSALON.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours -->
+                    <div class="glass-card rounded-2xl p-6 hover:border-gold-400/30 transition-all duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center">
+                                <i data-lucide="clock" class="w-5 h-5 text-UTTAM-black"></i>
+                            </div>
+                            <h4 class="dark:text-white text-UTTAM-black font-semibold">Opening Hours</h4>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between dark:text-white/60 text-UTTAM-black/60">
+                                <span>Monday – Friday</span>
+                                <span class="text-gold-400 font-medium">9:00 AM – 9:00 PM</span>
+                            </div>
+                            <div class="flex justify-between dark:text-white/60 text-UTTAM-black/60">
+                                <span>Saturday</span>
+                                <span class="text-gold-400 font-medium">9:00 AM – 10:00 PM</span>
+                            </div>
+                            <div class="flex justify-between dark:text-white/60 text-UTTAM-black/60">
+                                <span>Sunday</span>
+                                <span class="text-gold-400 font-medium">10:00 AM – 8:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="flex items-center justify-center gap-3 w-full py-4 rounded-xl bg-[#25D366] text-white font-semibold text-lg hover:shadow-lg hover:shadow-[#25D366]/30 hover:-translate-y-0.5 transition-all duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Chat on WhatsApp
+                    </a>
+
+                    <!-- Map Placeholder -->
+                    <div class="rounded-2xl overflow-hidden h-64 bg-UTTAM-card dark:bg-UTTAM-card bg-gray-100 flex items-center justify-center border dark:border-UTTAM-border border-gray-200">
+                        <div class="text-center">
+                            <i data-lucide="map" class="w-12 h-12 dark:text-white/20 text-UTTAM-black/20 mx-auto mb-2"></i>
+                            <p class="dark:text-white/40 text-UTTAM-black/40 text-sm">Interactive Map</p>
+                            <p class="dark:text-white/20 text-UTTAM-black/20 text-xs">Hauz Khas, New Delhi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card rounded-3xl p-8" data-animate="fade-left">
+                    <h3 class="font-display text-2xl font-semibold dark:text-white text-UTTAM-black mb-6">Send Us a Message</h3>
+                    <form id="contactForm" class="space-y-4" novalidate>
+                        <div>
+                            <label for="contactName" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Your Name</label>
+                            <input type="text" id="contactName" class="form-input" required aria-label="Your name">
+                        </div>
+                        <div>
+                            <label for="contactEmail" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" id="contactEmail" class="form-input" required aria-label="Your email">
+                        </div>
+                        <div>
+                            <label for="contactSubject" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Subject</label>
+                            <select id="contactSubject" class="form-input" required aria-label="Subject">
+                                <option value="">Select subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="appointment">Appointment Question</option>
+                                <option value="hair-patch">Hair Patch Consultation</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="contactMessage" class="block dark:text-white/70 text-UTTAM-black/70 text-sm font-medium mb-2">Message</label>
+                            <textarea id="contactMessage" rows="5" class="form-input resize-none" required aria-label="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full justify-center group">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                    <!-- Contact Success -->
+                    <div id="contactSuccess" class="hidden text-center py-8">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="check" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h4 class="font-display text-xl font-bold dark:text-white text-UTTAM-black mb-2">Message Sent!</h4>
+                        <p class="dark:text-white/60 text-UTTAM-black/60">We'll respond within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER MODAL ===== -->
+    <div id="newsletterModal" class="fixed inset-0 z-[200] flex items-center justify-center p-6 hidden" role="dialog" aria-label="Newsletter signup" aria-modal="true">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeNewsletter()"></div>
+        <div class="relative glass-card rounded-3xl p-8 sm:p-10 max-w-md w-full animate-scale-in">
+            <button onclick="closeNewsletter()" class="absolute top-4 right-4 w-8 h-8 rounded-lg dark:bg-UTTAM-card bg-gray-100 flex items-center justify-center dark:text-white/60 text-UTTAM-black/60 hover:text-gold-400 transition-colors" aria-label="Close newsletter">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="bell" class="w-8 h-8 text-UTTAM-black"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold dark:text-white text-UTTAM-black">Stay in the Loop</h3>
+                <p class="dark:text-white/60 text-UTTAM-black/60 mt-2">Get notified about new videos, transformations, and exclusive offers.</p>
+            </div>
+            <form id="newsletterForm" class="space-y-4" novalidate>
+                <input type="email" id="newsletterEmail" placeholder="your@email.com" class="form-input" required aria-label="Email for newsletter">
+                <button type="submit" class="btn-primary w-full justify-center">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    <span>Subscribe</span>
+                </button>
+            </form>
+            <div id="newsletterSuccess" class="hidden text-center py-6">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="check" class="w-8 h-8 text-white"></i>
+                </div>
+                <h4 class="font-display text-xl font-bold dark:text-white text-UTTAM-black mb-2">Thank You!</h4>
+                <p class="dark:text-white/60 text-UTTAM-black/60 text-sm">You'll receive notifications for new YouTube & Instagram videos.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="relative py-16 dark:bg-UTTAM-black bg-white border-t dark:border-UTTAM-border border-gray-200" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center">
+                            <span class="font-display text-UTTAM-black text-lg font-bold">L</span>
+                        </div>
+                        <div>
+                            <p class="font-display text-lg font-bold dark:text-white text-UTTAM-black">UTTAM SALON</p>
+                            <p class="text-gold-400 text-xs tracking-wider">PREMIUM SALON</p>
+                        </div>
+                    </div>
+                    <p class="dark:text-white/50 text-UTTAM-black/50 text-sm leading-relaxed mb-4">Where luxury meets transformation. Premium hair solutions for discerning clients.</p>
+                    <!-- Social Icons -->
+                    <div class="flex gap-3">
+                        <a href="#" class="w-9 h-9 rounded-lg dark:bg-UTTAM-card bg-gray-100 border dark:border-UTTAM-border border-gray-200 flex items-center justify-center hover:border-gold-400/50 hover:text-gold-400 dark:text-white/60 text-UTTAM-black/60 transition-all duration-300" aria-label="Instagram">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-lg dark:bg-UTTAM-card bg-gray-100 border dark:border-UTTAM-border border-gray-200 flex items-center justify-center hover:border-gold-400/50 hover:text-gold-400 dark:text-white/60 text-UTTAM-black/60 transition-all duration-300" aria-label="YouTube">
+                            <i data-lucide="youtube" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-lg dark:bg-UTTAM-card bg-gray-100 border dark:border-UTTAM-border border-gray-200 flex items-center justify-center hover:border-gold-400/50 hover:text-gold-400 dark:text-white/60 text-UTTAM-black/60 transition-all duration-300" aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-lg dark:bg-UTTAM-card bg-gray-100 border dark:border-UTTAM-border border-gray-200 flex items-center justify-center hover:border-gold-400/50 hover:text-gold-400 dark:text-white/60 text-UTTAM-black/60 transition-all duration-300" aria-label="Twitter">
+                            <i data-lucide="twitter" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="dark:text-white text-UTTAM-black font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#hero" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">Home</a></li>
+                        <li><a href="#services" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">Services</a></li>
+                        <li><a href="#about" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">About Us</a></li>
+                        <li><a href="#booking" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">Book Now</a></li>
+                        <li><a href="#contact" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="dark:text-white text-UTTAM-black font-semibold mb-4 text-sm uppercase tracking-wider">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">Haircuts</a></li>
+                        <li><a href="#services" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">Hair Patches</a></li>
+                        <li><a href="#services" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">Beard Grooming</a></li>
+                        <li><a href="#services" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">Keratin</a></li>
+                        <li><a href="#services" class="dark:text-white/50 text-UTTAM-black/50 hover:text-gold-400 transition-colors text-sm">Hair Color</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="dark:text-white text-UTTAM-black font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="dark:text-white/50 text-UTTAM-black/50 text-sm">42 Goldfinch Avenue</li>
+                        <li class="dark:text-white/50 text-UTTAM-black/50 text-sm">Hauz Khas, New Delhi</li>
+                        <li class="dark:text-white/50 text-UTTAM-black/50 text-sm">+91 98765 43210</li>
+                        <li class="dark:text-white/50 text-UTTAM-black/50 text-sm">hello@UTTAMSALON.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter CTA -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 mb-12">
+                <div>
+                    <h4 class="font-display text-lg font-semibold dark:text-white text-UTTAM-black">Get Exclusive Updates</h4>
+                    <p class="dark:text-white/50 text-UTTAM-black/50 text-sm">New videos, offers & transformations straight to your inbox.</p>
+                </div>
+                <button onclick="openNewsletter()" class="btn-primary whitespace-nowrap">
+                    <i data-lucide="bell" class="w-4 h-4"></i>
+                    <span>Subscribe</span>
+                </button>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t dark:border-UTTAM-border border-gray-200">
+                <p class="dark:text-white/40 text-UTTAM-black/40 text-sm">&copy; 2024 UTTAM SALON. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="dark:text-white/40 text-UTTAM-black/40 hover:text-gold-400 text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="dark:text-white/40 text-UTTAM-black/40 hover:text-gold-400 text-sm transition-colors">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="backToTop" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-xl bg-gradient-to-r from-gold-400 to-gold-600 text-UTTAM-black flex items-center justify-center shadow-lg shadow-gold-400/20 hover:shadow-gold-400/40 hover:-translate-y-1 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none" aria-label="Back to top">
+        <i data-lucide="chevron-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
